@@ -16,8 +16,8 @@
   "license": "ISC",
   "jest": {
     "setupFiles": [
-      "<rootDir>/test-shim.js",
-      "<rootDir>/test-setup.js"
+      "<rootDir>/test/test-shim.js",
+      "<rootDir>/test/test-setup.js"
     ],
     "moduleFileExtensions": [
       "ts",
@@ -25,7 +25,7 @@
       "js"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/test-preprocessor.js"
+      "^.+\\.(ts|tsx)$": "<rootDir>/test/test-preprocessor.js"
     },
     "testMatch": [
       "<rootDir>/src/*.spec.(ts|tsx|js)",
