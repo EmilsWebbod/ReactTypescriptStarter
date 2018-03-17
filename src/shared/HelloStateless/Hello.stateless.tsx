@@ -1,6 +1,7 @@
 
 import * as React from 'react';
 import {SFC} from 'react'
+const styles = require('./Hello.stateless.scss');
 
 type Props = {
     header: string
@@ -8,7 +9,7 @@ type Props = {
 }
 
 const Hello: SFC<Props> = ({header, text}) => (
-    <div>
+    <div className={styles.Hello}>
         <h1>{header}</h1>
         <p>{text}</p>
     </div>
