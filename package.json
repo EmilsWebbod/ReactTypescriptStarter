@@ -1,0 +1,58 @@
+{
+  "name": "typescriptreact",
+  "version": "1.0.0",
+  "description": "Test react with typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --mode development",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "Emil A Olsen",
+  "license": "ISC",
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test-shim.js",
+      "<rootDir>/test-setup.js"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/test-preprocessor.js"
+    },
+    "testMatch": [
+      "<rootDir>/src/*.spec.(ts|tsx|js)",
+      "<rootDir>/src/**/*/*.spec.(ts|tsx|js)"
+    ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.9",
+    "@types/jest": "^22.2.0",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "@types/webpack-env": "^1.13.5",
+    "awesome-typescript-loader": "^5.0.0-0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.2",
+    "react-test-renderer": "^16.2.0",
+    "source-map-loader": "^0.2.3",
+    "tslib": "^1.9.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "react": "^16.3.0-alpha.2",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0"
+  }
+}
