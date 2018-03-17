@@ -1,0 +1,6 @@
+{
+  "extends": ["tslint-eslint-rules", "tslint-react-recommended"],
+  "rules": {
+    "linebreak-style": ["CRLF"]
+  }
+}

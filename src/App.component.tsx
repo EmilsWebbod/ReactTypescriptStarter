@@ -6,15 +6,15 @@ const initialState = {};
 type State = typeof initialState;
 
 export default class AppComponent extends React.Component<object, State> {
-    state: State = initialState;
+  public state: State = initialState;
 
-    render() {
-        const {} = this.props;
-        return (
-            <div className={styles.App}>
-                <h1>AppComponent</h1>
-                <Hello header="Header" text="text" />
-            </div>
-        )
-    }
+  public render() {
+    const {} = this.props;
+    return (
+      <div className={styles.App}>
+        <h1>AppComponent</h1>
+        <Hello header="Header" text="text" />
+      </div>
+    );
+  }
 }
