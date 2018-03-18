@@ -4,7 +4,7 @@
   "description": "Test react with typescript",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --mode development",
+    "start": "webpack-dev-server --mode development",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
@@ -44,10 +44,12 @@
     "@types/webpack-env": "^1.13.5",
     "autoprefixer": "^8.1.0",
     "awesome-typescript-loader": "^5.0.0-0",
+    "babel-polyfill": "^6.26.0",
     "css-loader": "^0.28.11",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.0.6",
     "jest": "^22.4.2",
     "jest-css-modules": "^1.1.0",
     "node-sass": "^4.7.2",
@@ -64,12 +66,20 @@
     "typescript": "^2.7.2",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-server": "^3.1.1",
+    "webpack-hot-middleware": "^2.21.2"
   },
   "dependencies": {
     "enzyme": "^3.3.0",
+    "history": "^4.7.2",
     "react": "^16.3.0-alpha.2",
     "react-dom": "^16.2.0",
-    "react-hot-loader": "^4.0.0"
+    "react-hot-loader": "^4.0.0",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^3.7.2",
+    "webpack-dev-middleware": "^3.0.1"
   }
 }

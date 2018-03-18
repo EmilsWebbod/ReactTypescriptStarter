@@ -1,21 +1,23 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
+
+import { Provider } from 'react-redux';
+import { routerReducer, routerMiddleware, push } from 'react-router-redux';
+import { Router, ConnectedRouter } from 'react-router-dom';
 
 import AppComponent from './App.component';
+import store, {history} from './store';
 
-const render = (Component: any) => {
+const render = (Component) => {
   ReactDOM.render(
-    <AppContainer>
-      <Component />
-    </AppContainer>,
+    <Provider store={store}>
+      <Router history={history} >
+        <Component />
+      </Router>
+    </Provider>,
     document.getElementById('root')
   );
 };
 
 render(AppComponent);
-
-if (module.hot) {
-  module.hot.accept('./App.component', () => { render(AppComponent); });
-}
