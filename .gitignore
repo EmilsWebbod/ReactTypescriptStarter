@@ -2,4 +2,5 @@
 node_modules
 dist
 .idea
+.awcache
 package-lock.json

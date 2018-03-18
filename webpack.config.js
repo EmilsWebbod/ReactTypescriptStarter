@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 
 const PORT = 4200;
 module.exports = {

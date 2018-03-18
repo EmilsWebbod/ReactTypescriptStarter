@@ -1,13 +1,11 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
 import { Provider } from 'react-redux';
-import { routerReducer, routerMiddleware, push } from 'react-router-redux';
 import { Router, ConnectedRouter } from 'react-router-dom';
 
-import AppComponent from './App.component';
 import store, {history} from './store';
+import Root from './Root';
 
 const render = (Component) => {
   ReactDOM.render(
@@ -20,4 +18,4 @@ const render = (Component) => {
   );
 };
 
-render(AppComponent);
+render(Root);
